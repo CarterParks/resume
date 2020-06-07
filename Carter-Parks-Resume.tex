@@ -1,0 +1,126 @@
+\documentclass[12pt]{article}
+
+\usepackage{multicol}
+\usepackage{geometry}
+\usepackage{fontspec}
+\usepackage{anyfontsize}
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage{nopageno}
+\usepackage{tabularx}
+\usepackage{fancyhdr}
+\usepackage{amssymb}
+
+\definecolor{mainGray}{gray}{.3}
+\definecolor{hrulegray}{gray}{.5}
+
+\geometry{margin=1cm, footskip=0cm}
+\setsansfont{OpenSans-Regular.ttf}
+\setlength{\parindent}{0em}
+\setlength{\parskip}{0em}
+\setlength{\columnsep}{.05\textwidth}
+
+\renewcommand{\headrulewidth}{0pt}
+\pagestyle{fancy}
+\cfoot{}
+\rfoot{\color{mainGray}\footnotesize\sffamily Made with \rmfamily\LaTeX.}
+
+\newcommand{\sechead}[1]{{
+\fontspec{OpenSans-Bold.ttf} \footnotesize \color{mainGray}
+\MakeUppercase{#1}
+}}
+
+\newcommand{\job}[5]{{
+\fontspec{Merriweather-Bold.ttf}
+#1\\
+\color{mainGray} \fontspec{OpenSans-Regular.ttf} \footnotesize
+#2\\#3 | #4\\
+\small \fontspec{Merriweather-Regular.ttf}
+#5
+}}
+
+\newcommand{\skill}[2]{{
+\fontspec{Merriweather-Bold.ttf}
+#1\\
+\small \fontspec{Merriweather-Regular.ttf}\color{mainGray}
+#2
+}}
+
+\newcommand{\course}[1]{{\fontspec{OpenSans-Regular.ttf}{#1}}}
+
+\begin{document}
+\sffamily
+
+\begin{multicols}{2}
+{\fontspec{Merriweather-Bold.ttf} \Huge Carter Parks}\\
+
+{\color{mainGray}
+Student at Utah State University\\
+Computer Science Major, Class of 2023
+}
+\vspace{14pt}
+{\color{hrulegray}\hrule
+}
+
+\columnbreak
+
+\begin{flushright}
+{\small \fontspec{OpenSans-Regular.ttf}
+{\color{mainGray}
+1585 N 400 E, Apt. 528\\
+North Logan, UT 84341\\
+}
+435\,\textbullet\,225\,\textbullet\,1558\\
+carterparks@protonmail.com\\
+carter-parks.net\\
+}
+\end{flushright}
+
+\end{multicols}
+
+\begin{multicols}{2}
+
+\sechead{Employment}\\
+
+\job{Logan Small Business Development Center}{Logan, UT}{Developer and IT Consultant}{APR 2020 - PRESENT}{
+Responsibilities included consultations with entrepreneurs about the latest tech market trends, developing e-commerce websites, advising business owners on system architecture, and providing support for the variety of IT related concerns new companies have.
+}\\
+
+\job{Utah State University}{Logan, UT}{Custodian}{MAR 2019 - APR 2020}{
+Responsibilities included maintenance and janitorial duties. Required working under a deadline and following rigorous protocols.}\\
+
+\job{American Burgers}{Tooele, UT}{Cashier}{JUN 2018 - DEC 2018}{
+Responsibilities included handling money, interacting with customers, preparing and packaging food, and training new hires, along with various situational demands. Required working in a team and under pressure.}\\
+
+\sechead{Education \& Internships}\\
+
+\job{Grantsville High School}{Grantsville, UT}{High School Diploma}{AUG 2014 - MAY 2018}{
+4 Years on the Grantsville High School Tennis Team. 4 Years on the Grantsville High School Speech \& Debate Team. 2 Years as a member of the Grantsville High School Chapter National Honors Society.
+}\\
+
+\job{Internship at the University of Idaho}{Moscow, ID}{Chemical Engineering Dept.}{JUN 2015 - JUL 2015}{
+Assisted in computer modeling of metabolic networks.
+}
+
+\columnbreak
+
+\sechead{Experience}\\
+
+\skill{Java}{Frequent use. Experienced in GUI development with JavaFX, and used in courses up to \course{CS2410}. Used for personal projects relating to Linear Algebra}\\
+
+\skill{Python}{Frequent use. Used in courses up to \course{CS1440}, along with personal use in \course{PHYS2210}, \course{PHYS2220}, and \course{MATH2270} (Linear Algebra)}\\
+
+\skill{Linux \& Windows}{Both used for development, and as a personal desktop environment. Proficient in bash.}\\
+
+\skill{HTML, CSS, PHP, AWS}{Used for personal projects. Familiar with server-side scripting for file storage.}\\
+
+\sechead{Qualities}\\
+
+\skill{Passion}{I enjoy every aspect of computers, and love to learn about them. If there is something that I don't know well enough, I am more than willing to learn it in my free time, and I can learn it quickly.}\\
+
+\skill{Teamwork}{I enjoy working with a group, and love seeing a plan well executed. My past employment has relied heavily on each team member functioning as part of a whole.}\\
+
+\skill{Organization}{I can follow plans and procedures, and work well under management. I am a result-oriented person, focused on honesty and accomplishing goals.}\\
+\end{multicols}
+
+\end{document}

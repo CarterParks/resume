@@ -1,0 +1,7 @@
+xelatex -interaction=nonstopmode $1.tex
+mkdir temp
+mv $1.tex temp
+mv $1.pdf temp
+rm $1.*
+mv temp/$1.* .
+rm -r temp
