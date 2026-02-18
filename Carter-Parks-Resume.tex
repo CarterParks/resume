@@ -11,12 +11,13 @@
 \usepackage{fancyhdr}
 \usepackage{amssymb}
 \usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
 
-\definecolor{mainGray}{gray}{.3}
+\definecolor{mainGray}{gray}{.5}
 \definecolor{hrulegray}{gray}{.5}
 
 \geometry{margin=1cm, footskip=4.35004pt, headheight=14.49998pt}
-\setsansfont{OpenSans-Regular.ttf}
+\setsansfont{GlacialIndifference-Regular.otf}
 \setlength{\parindent}{0em}
 \setlength{\parskip}{0em}
 \setlength{\columnsep}{.05\textwidth}
@@ -27,43 +28,39 @@
 % \rfoot{%\color{mainGray}\footnotesize\sffamily Made with \rmfamily\LaTeX.}
 
 \newcommand{\sechead}[1]{{
-\fontspec{OpenSans-Bold.ttf} \footnotesize
+\fontspec{GlacialIndifference-Regular.otf}\bfseries \footnotesize
 \MakeUppercase{#1}
 }}
 
 \newcommand{\job}[4]{{
 \vspace{6pt}
-\fontspec{Merriweather-Bold.ttf}
-#1\\
-\fontspec{OpenSans-Regular.ttf} \footnotesize
+\fontspec{GlacialIndifference-Bold.otf}#1\\
+\fontspec{GlacialIndifference-Regular.otf} \footnotesize
 #2 | #3
-\footnotesize \fontspec{Merriweather-Regular.ttf}
-\begin{itemize}[leftmargin=.17in,itemsep=0in]
+\footnotesize \fontspec{GlacialIndifference-Regular.otf}\begin{itemize}[leftmargin=.17in,itemsep=0in]
 #4
 \end{itemize}
 }}
 
 \newcommand{\skill}[2]{{
-\fontspec{Merriweather-Bold.ttf}
-#1\\
-\small \fontspec{Merriweather-Regular.ttf}
-#2
+\small {\fontspec{GlacialIndifference-Bold.otf}#1} | \fontspec{GlacialIndifference-Regular.otf}#2
+\vspace{6pt}
 }}
 
-\newcommand{\course}[1]{{\fontspec{OpenSans-Regular.ttf}{#1}}}
+\newcommand{\course}[1]{{\fontspec{GlacialIndifference-Regular.otf}{#1}}}
 
 \hyphenpenalty=10000
 \exhyphenpenalty=10000
+\raggedright
 
 \begin{document}
 \sffamily
 
 \begin{multicols}{2}
-{\fontspec{Merriweather-Bold.ttf} \Huge Carter Parks}\\
+{\fontspec{GlacialIndifference-Regular.otf} \Huge Carter Parks}\\[6pt]
 
 {%\color{mainGray}
-Student at Utah State University\\
-Computer Science BS, Class of 2023
+Full Stack Web Developer\\
 }
 \vspace{14pt}
 {%\color{hrulegray}\hrule
@@ -72,70 +69,17 @@ Computer Science BS, Class of 2023
 \columnbreak
 
 \begin{flushright}
-{\small \fontspec{OpenSans-Regular.ttf}
-435\,\textbullet\,225\,\textbullet\,1558\\
-contact@carterparks.org\\
-carterparks.org\\
+{\small \fontspec{GlacialIndifference-Regular.otf}\href{https://carterparks.org}{carterparks.org}\\
+\href{https://github.com/CarterParks}{github.com/CarterParks}\\
+435\,\textbullet\,225\,\textbullet\,1558 | \href{mailto:contact@carterparks.org}{contact@carterparks.org}\\
+Logan, UT\\
 }
 \end{flushright}
 
 \end{multicols}
 
-\begin{multicols}{2}
-
-\sechead{Experience}\\
-
-\job{ControlByWeb}{Software Engineer}{MAY 2023 - PRESENT}{
-\item Development of management platform for internet enabled industrial hardware
-\item Frontend development with VueJS
-\item Backend development with Laravel
-\item Management of AWS based infrastructure
-}
-
-\job{Symliv LLC}{Software Developer}{JUN 2021 - MAY 2023}{
-\item Developed customer facing access control for vacation rentals
-\item Built backend and frontend on a cloud-based MERN stack
-\item Implemented image generation and cloud storage
-\item Administered DNS
-}
-
-\job{Logan Small Business Development Center}{Developer and IT Consultant}{APR 2020 - JUN 2021}{
-\item Provided support for IT related concerns new companies had
-\item Used the SCORM API to track user learning
-\item Developed e-commerce websites
-}
-
-% \job{Utah State University}{Logan, UT}{Custodian}{MAR 2019 - APR 2020}{
-% Responsibilities included maintenance and janitorial duties. Required working under a deadline and following rigorous protocols.}\\
-% 
-% \job{American Burgers}{Tooele, UT}{Cashier}{JUN 2018 - DEC 2018}{
-% Responsibilities included handling money, interacting with customers, preparing and packaging food, and training new hires, along with various situational demands. Required working in a team and under pressure.}\\
-
-\vspace{14pt}
-\sechead{Education}\\
-
-\job{Utah State University}{Computer Science BS, Minor in Mathematics}{JAN 2019 - MAY 2023}{
-\item Mathematics Minor gave a foundation to interface with complex ideas and topics related to computer science,
-useful in many applications.
-\item Expanded my skills and helped me learn the tenets of good software and algorithm design
-\item Gave experience working with groups, solving complicated problems efficiently,
-and rapidly getting up to speed on new topics.
-}
-
-%\job{Grantsville High School}{High School Diploma}{AUG 2014 - MAY 2018}{
-%\item 4 Years Grantsville High School Tennis Team
-%\item 4 Years Grantsville High School Speech and Debate Team.
-%\item 2 Years member of the Grantsville High School Chapter National Honors Society.
-%\item Sterling Scholar Award for Speech/Forensics
-%}
-
-%\job{Internship at the University of Idaho}{Moscow, ID}{Chemical Engineering Dept.}{JUN 2015 - JUL 2015}{
-%Assisted in computer modeling of metabolic networks.
-%}
-
-\columnbreak
-
-\sechead{Skills}\\
+\sechead{Skills}\\[6pt]
+\hrule\\[6pt]
 
 \skill{VueJS, HTML, CSS}{
 Frontend web development at ControlByWeb
@@ -171,6 +115,57 @@ Coursework in Numerical Analysis and High Performance Computing contexts.
 Coursework document production in various mathematics contexts.
 }\\
 
+\vspace{14pt}
+\sechead{Experience}\\[6pt]
+\hrule\\[6pt]
+
+\job{ControlByWeb}{Software Engineer}{MAY 2023 - PRESENT}{
+\item Development of management platform for internet enabled industrial hardware
+\item Frontend development with VueJS
+\item Backend development with Laravel
+\item Management of AWS based infrastructure
+}
+
+\job{Symliv LLC}{Software Developer}{JUN 2021 - MAY 2023}{
+\item Developed customer facing access control for vacation rentals
+\item Built backend and frontend on a cloud-based MERN stack
+\item Implemented image generation and cloud storage
+\item Administered DNS
+}
+
+\job{Logan Small Business Development Center}{Developer and IT Consultant}{APR 2020 - JUN 2021}{
+\item Provided support for IT related concerns new companies had
+\item Used the SCORM API to track user learning
+\item Developed e-commerce websites
+}
+
+% \job{Utah State University}{Logan, UT}{Custodian}{MAR 2019 - APR 2020}{
+% Responsibilities included maintenance and janitorial duties. Required working under a deadline and following rigorous protocols.}\\
+%
+% \job{American Burgers}{Tooele, UT}{Cashier}{JUN 2018 - DEC 2018}{
+% Responsibilities included handling money, interacting with customers, preparing and packaging food, and training new hires, along with various situational demands. Required working in a team and under pressure.}\\
+
+\vspace{14pt}
+\sechead{Education}\\[6pt]
+\hrule\\[6pt]
+
+\job{Utah State University}{Computer Science BS, Minor in Mathematics}{JAN 2019 - MAY 2023}{
+\item Gave experience working with groups, solving complicated problems efficiently, and rapidly getting up to speed on new topics.
+\item Learned the tenets of good software and algorithm design, with a grounding in Computer Science theory
+\item Mathematics Minor gave a foundation to interface with complex ideas and topics related to Computer Science
+}
+
+%\job{Grantsville High School}{High School Diploma}{AUG 2014 - MAY 2018}{
+%\item 4 Years Grantsville High School Tennis Team
+%\item 4 Years Grantsville High School Speech and Debate Team.
+%\item 2 Years member of the Grantsville High School Chapter National Honors Society.
+%\item Sterling Scholar Award for Speech/Forensics
+%}
+
+%\job{Internship at the University of Idaho}{Moscow, ID}{Chemical Engineering Dept.}{JUN 2015 - JUL 2015}{
+%Assisted in computer modeling of metabolic networks.
+%}
+
 % \sechead{Qualities}\\
 % 
 % \skill{Passion}{I enjoy every aspect of computers, and love to learn about them. If there is something that I don't know well enough, I am more than willing to learn it in my free time, and I can learn it quickly.}\\
@@ -178,6 +173,8 @@ Coursework document production in various mathematics contexts.
 % \skill{Teamwork}{I enjoy working with a group, and love seeing a plan well executed. My past employment has relied heavily on each team member functioning as part of a whole.}\\
 % 
 % \skill{Organization}{I can follow plans and procedures, and work well under management. I am a result-oriented person, focused on honesty and accomplishing goals.}\\
-\end{multicols}
+
+\vfill
+{\color{mainGray}\footnotesize \fontspec{GlacialIndifference-Regular.otf}XeLaTeX source for this document can be found at \href{https://github.com/CarterParks/resume}{github.com/CarterParks/resume}}
 
 \end{document}
