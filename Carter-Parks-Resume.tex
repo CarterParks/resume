@@ -24,19 +24,20 @@
 \renewcommand{\headrulewidth}{0pt}
 \pagestyle{fancy}
 \cfoot{}
-% \rfoot{\color{mainGray}\footnotesize\sffamily Made with \rmfamily\LaTeX.}
+% \rfoot{%\color{mainGray}\footnotesize\sffamily Made with \rmfamily\LaTeX.}
 
 \newcommand{\sechead}[1]{{
-\fontspec{OpenSans-Bold.ttf} \footnotesize \color{mainGray}
+\fontspec{OpenSans-Bold.ttf} \footnotesize
 \MakeUppercase{#1}
 }}
 
 \newcommand{\job}[4]{{
+\vspace{6pt}
 \fontspec{Merriweather-Bold.ttf}
 #1\\
-\color{mainGray} \fontspec{OpenSans-Regular.ttf} \footnotesize
+\fontspec{OpenSans-Regular.ttf} \footnotesize
 #2 | #3
-\small \fontspec{Merriweather-Regular.ttf}
+\footnotesize \fontspec{Merriweather-Regular.ttf}
 \begin{itemize}[leftmargin=.17in,itemsep=0in]
 #4
 \end{itemize}
@@ -45,11 +46,14 @@
 \newcommand{\skill}[2]{{
 \fontspec{Merriweather-Bold.ttf}
 #1\\
-\small \fontspec{Merriweather-Regular.ttf}\color{mainGray}
+\small \fontspec{Merriweather-Regular.ttf}
 #2
 }}
 
 \newcommand{\course}[1]{{\fontspec{OpenSans-Regular.ttf}{#1}}}
+
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
 
 \begin{document}
 \sffamily
@@ -57,12 +61,12 @@
 \begin{multicols}{2}
 {\fontspec{Merriweather-Bold.ttf} \Huge Carter Parks}\\
 
-{\color{mainGray}
+{%\color{mainGray}
 Student at Utah State University\\
 Computer Science BS, Class of 2023
 }
 \vspace{14pt}
-{\color{hrulegray}\hrule
+{%\color{hrulegray}\hrule
 }
 
 \columnbreak
@@ -89,16 +93,16 @@ carterparks.org\\
 }
 
 \job{Symliv LLC}{Software Developer}{JUN 2021 - MAY 2023}{
-\item Customer facing access control for vacation rentals
-\item Backend and frontend development on a cloud-based MERN stack
-\item DNS administration
-\item Image generation and cloud storage
+\item Developed customer facing access control for vacation rentals
+\item Built backend and frontend on a cloud-based MERN stack
+\item Implemented image generation and cloud storage
+\item Administered DNS
 }
 
 \job{Logan Small Business Development Center}{Developer and IT Consultant}{APR 2020 - JUN 2021}{
-\item Developing e-commerce websites
-\item Using the SCORM API to track user learning
-\item Providing support for IT related concerns new companies have
+\item Provided support for IT related concerns new companies had
+\item Used the SCORM API to track user learning
+\item Developed e-commerce websites
 }
 
 % \job{Utah State University}{Logan, UT}{Custodian}{MAR 2019 - APR 2020}{
@@ -107,14 +111,15 @@ carterparks.org\\
 % \job{American Burgers}{Tooele, UT}{Cashier}{JUN 2018 - DEC 2018}{
 % Responsibilities included handling money, interacting with customers, preparing and packaging food, and training new hires, along with various situational demands. Required working in a team and under pressure.}\\
 
+\vspace{14pt}
 \sechead{Education}\\
 
 \job{Utah State University}{Computer Science BS, Minor in Mathematics}{JAN 2019 - MAY 2023}{
+\item Mathematics Minor gave a foundation to interface with complex ideas and topics related to computer science,
+useful in many applications.
 \item Expanded my skills and helped me learn the tenets of good software and algorithm design
 \item Gave experience working with groups, solving complicated problems efficiently,
 and rapidly getting up to speed on new topics.
-\item Mathematics Minor has given me a foundation to interface with complex ideas and topics related to computer science,
-that are useful in many applications.
 }
 
 %\job{Grantsville High School}{High School Diploma}{AUG 2014 - MAY 2018}{
