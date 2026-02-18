@@ -34,7 +34,7 @@
 
 \newcommand{\job}[4]{{
 \vspace{6pt}
-\fontspec{GlacialIndifference-Bold.otf}#1\\
+\fontspec{GlacialIndifference-Regular.otf}#1\\
 \fontspec{GlacialIndifference-Regular.otf} \footnotesize
 #2 | #3
 \footnotesize \fontspec{GlacialIndifference-Regular.otf}\begin{itemize}[leftmargin=.17in,itemsep=0in]
@@ -60,7 +60,7 @@
 {\fontspec{GlacialIndifference-Regular.otf} \Huge Carter Parks}\\[6pt]
 
 {%\color{mainGray}
-Full Stack Web Developer\\
+Full Stack Web Developer focused on making robust and high-quality software\\
 }
 \vspace{14pt}
 {%\color{hrulegray}\hrule
@@ -71,7 +71,9 @@ Full Stack Web Developer\\
 \begin{flushright}
 {\small \fontspec{GlacialIndifference-Regular.otf}\href{https://carterparks.org}{carterparks.org}\\
 \href{https://github.com/CarterParks}{github.com/CarterParks}\\
-435\,\textbullet\,225\,\textbullet\,1558 | \href{mailto:software@carterparks.org}{software@carterparks.org}\\
+\href{mailto:software@carterparks.org}{software@carterparks.org}\\
+435\,\textbullet\,225\,\textbullet\,1558\\
+Logan, UT
 }
 \end{flushright}
 
@@ -80,69 +82,69 @@ Full Stack Web Developer\\
 \sechead{Skills}\\[6pt]
 \hrule\\[6pt]
 
-\skill{VueJS, HTML, CSS}{
-Frontend and responsive web development at ControlByWeb.
-}\\
+\begin{multicols}{5}
+\interlinepenalty=10000
+\footnotesize
+\begin{itemize}[leftmargin=.17in,itemsep=0in]
+\item VueJS
+\item JavaScript
+\item HTML, CSS
+\item HTTP, TCP
+\item Git
+\columnbreak
+\item AWS, Server Admin
+\item MySQL, SQLite
+\item TypeScript
+\item NodeJS
+\item Python
+\columnbreak
+\item Django
+\item PHP, Laravel
+\item Linux, CLI, Vim
+\item Bash, Z shell, fish
+\item macOS
+\columnbreak
+\item Windows
+\item React
+\item MongoDB
+\item Java
+\item C
+\columnbreak
+\item CUDA, OpenMP
+\item LaTeX
+\item Markdown
+\item Kotlin, KMP
+\item LLM Agents
+\end{itemize}
+\end{multicols}
 
-\skill{Linux}{
-Used as a development platform for coursework and employment, and as a personal desktop.
-Comfortable in commandline and server environments.
-}\\
-
-\skill{Git}{
-Comfortable with version control best practices.
-}\\
-
-\skill{MySQL, SQLite}{
-Relational database design and management at ControlByWeb.
-}\\
-
-\skill{TypeScript, NodeJS, ExpressJS, MongoDB}{
-Backend web development for employment at Symliv LLC.
-}\\
-
-\skill{Python, Django}{
-Coursework and backend web development for Logan Small Business Development Center.
-Language of choice for personal projects.
-}\\
-
-\skill{Java}{
-Coursework to learn and develop algorithms.
-}\\
-
-\skill{C, CUDA, OpenMP}{
-Coursework in Numerical Analysis and High Performance Computing contexts.
-}\\
-
-\skill{LaTeX}{
-Coursework document production in various mathematics contexts.
-}\\
-
-\vspace{14pt}
+\vspace{6pt}
 \sechead{Experience}\\[6pt]
 \hrule\\[6pt]
 
 \job{ControlByWeb}{Software Engineer}{MAY 2023 - PRESENT}{
-\item Development of management platform for internet enabled industrial hardware
-\item Designed and implemented user-facing UI with VueJS, with a focus on legibility, convenience, and simplicity
-\item Backend development with Laravel
+\item Development and maintenance of industrial hardware management platform, supporting over 7700 industrial devices, and over 4600 international corporate customers
+\item Designed and implemented responsive VueJS UI for hardware management platform, with a focus on legibility, convenience, and simplicity
+\item Backend development with Laravel, designed relational database schemas to represent business logic
+\item Implemented renewal payments by integrating with the Stripe API
 \item Created, managed, and documented AWS-based cloud infrastructure
 \item Wrote an internal legal compliance service, documented toolchain and usage
-\item Collaborated on multi-developer projects using an Agile-lite development workflow
+\item Ground-up implementation of a cross-platform Android/iOS application for hardware management
+\item Collaborated on multi-developer projects using an Agile-lite development workflow to create clean, maintainable code
+\item Worked closely with support teams to communicate with customers for requirements gathering
 }
 
-\job{Symliv LLC}{Software Developer}{JUN 2021 - MAY 2023}{
+\job{SymLiv}{Software Developer - Part Time}{JUN 2021 - MAY 2023}{
 \item Developed customer facing access control for vacation rentals
-\item Built backend and frontend on a cloud-based MERN stack
+\item Built backend and frontend on a Google Cloud based MERN stack
 \item Implemented image generation and cloud storage
 \item Modified and implemented UI mockups with Figma
-\item Administered DNS
 }
 
-\job{Logan Small Business Development Center}{Developer and IT Consultant}{APR 2020 - JUN 2021}{
+\job{Logan Small Business Development Center}{Developer and IT Consultant - Part Time}{APR 2020 - JUN 2021}{
 \item Provided support for IT related concerns new companies had
-\item Used the SCORM API to track user learning
-\item Developed e-commerce websites
+\item Used the SCORM API to create and track user progression through business education courses
+\item Developed e-commerce websites for customers
 }
 
 % \job{Utah State University}{Logan, UT}{Custodian}{MAR 2019 - APR 2020}{
@@ -181,7 +183,6 @@ Coursework document production in various mathematics contexts.
 % \skill{Organization}{I can follow plans and procedures, and work well under management. I am a result-oriented person, focused on honesty and accomplishing goals.}\\
 
 \vfill
-{\footnotesize \fontspec{GlacialIndifference-Regular.otf}Currently living in Logan, UT. U.S. Citizen.}\\[4pt]
-{\color{mainGray}\footnotesize \fontspec{GlacialIndifference-Regular.otf}XeLaTeX source for this document can be found at \href{https://github.com/CarterParks/resume}{github.com/CarterParks/resume}}
+{\scriptsize \fontspec{GlacialIndifference-Regular.otf}U.S. Citizen. The \LaTeX\ source for this document can be found at \href{https://github.com/CarterParks/resume}{github.com/CarterParks/resume}}
 
 \end{document}
