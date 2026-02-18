@@ -15,7 +15,7 @@
 \definecolor{mainGray}{gray}{.3}
 \definecolor{hrulegray}{gray}{.5}
 
-\geometry{margin=1cm, footskip=0cm}
+\geometry{margin=1cm, footskip=4.35004pt, headheight=14.49998pt}
 \setsansfont{OpenSans-Regular.ttf}
 \setlength{\parindent}{0em}
 \setlength{\parskip}{0em}
@@ -31,15 +31,15 @@
 \MakeUppercase{#1}
 }}
 
-\newcommand{\job}[5]{{
+\newcommand{\job}[4]{{
 \fontspec{Merriweather-Bold.ttf}
 #1\\
 \color{mainGray} \fontspec{OpenSans-Regular.ttf} \footnotesize
-#2\\#3 | #4
+#2 | #3
 \small \fontspec{Merriweather-Regular.ttf}
 \begin{itemize}[leftmargin=.17in,itemsep=0in]
-#5
-\end{itemize}\\
+#4
+\end{itemize}
 }}
 
 \newcommand{\skill}[2]{{
@@ -70,8 +70,8 @@ Computer Science BS, Class of 2023
 \begin{flushright}
 {\small \fontspec{OpenSans-Regular.ttf}
 435\,\textbullet\,225\,\textbullet\,1558\\
-contact@carter-parks.net\\
-carter-parks.net\\
+contact@carterparks.org\\
+carterparks.org\\
 }
 \end{flushright}
 
@@ -81,18 +81,25 @@ carter-parks.net\\
 
 \sechead{Experience}\\
 
-\job{Symliv LLC}{Logan, UT}{Software Developer}{JUN 2021 - PRESENT}{
+\job{ControlByWeb}{Software Engineer}{MAY 2023 - PRESENT}{
+\item Development of management platform for internet enabled industrial hardware
+\item Frontend development with VueJS
+\item Backend development with Laravel
+\item Management of AWS based infrastructure
+}
+
+\job{Symliv LLC}{Software Developer}{JUN 2021 - MAY 2023}{
 \item Customer facing access control for vacation rentals
 \item Backend and frontend development on a cloud-based MERN stack
 \item DNS administration
 \item Image generation and cloud storage
-}\\
+}
 
-\job{Logan Small Business Development Center}{Logan, UT}{Developer and IT Consultant}{APR 2020 - JUN 2021}{
+\job{Logan Small Business Development Center}{Developer and IT Consultant}{APR 2020 - JUN 2021}{
 \item Developing e-commerce websites
 \item Using the SCORM API to track user learning
 \item Providing support for IT related concerns new companies have
-}\\
+}
 
 % \job{Utah State University}{Logan, UT}{Custodian}{MAR 2019 - APR 2020}{
 % Responsibilities included maintenance and janitorial duties. Required working under a deadline and following rigorous protocols.}\\
@@ -102,20 +109,20 @@ carter-parks.net\\
 
 \sechead{Education}\\
 
-\job{Utah State University}{Logan, UT}{Computer Science BS, Minor in Mathematics}{JAN 2019 - MAY 2023}{
+\job{Utah State University}{Computer Science BS, Minor in Mathematics}{JAN 2019 - MAY 2023}{
 \item Expanded my skills and helped me learn the tenets of good software and algorithm design
 \item Gave experience working with groups, solving complicated problems efficiently,
 and rapidly getting up to speed on new topics.
 \item Mathematics Minor has given me a foundation to interface with complex ideas and topics related to computer science,
 that are useful in many applications.
-}\\
+}
 
-\job{Grantsville High School}{Grantsville, UT}{High School Diploma}{AUG 2014 - MAY 2018}{
-\item 4 Years Grantsville High School Tennis Team
-\item 4 Years Grantsville High School Speech and Debate Team.
-\item 2 Years member of the Grantsville High School Chapter National Honors Society.
-\item Sterling Scholar Award for Speech/Forensics
-}\\
+%\job{Grantsville High School}{High School Diploma}{AUG 2014 - MAY 2018}{
+%\item 4 Years Grantsville High School Tennis Team
+%\item 4 Years Grantsville High School Speech and Debate Team.
+%\item 2 Years member of the Grantsville High School Chapter National Honors Society.
+%\item Sterling Scholar Award for Speech/Forensics
+%}
 
 %\job{Internship at the University of Idaho}{Moscow, ID}{Chemical Engineering Dept.}{JUN 2015 - JUL 2015}{
 %Assisted in computer modeling of metabolic networks.
@@ -124,6 +131,19 @@ that are useful in many applications.
 \columnbreak
 
 \sechead{Skills}\\
+
+\skill{VueJS, HTML, CSS}{
+Frontend web development at ControlByWeb
+}\\
+
+\skill{Linux}{
+Used as a development platform for coursework and employment, and as a personal desktop.
+Comfortable in commandline and server environments.
+}\\
+
+\skill{Git}{
+Comfortable with version control best practices.
+}\\
 
 \skill{TypeScript, NodeJS, ExpressJS, MongoDB}{
 Backend web development for employment at Symliv LLC.
@@ -134,23 +154,8 @@ Coursework and backend web development for Logan Small Business Development Cent
 Language of choice for personal projects.
 }\\
 
-\skill{Linux}{
-Used as a development platform for coursework and employment, and as a personal desktop.
-Comfortable in commandline and server environments.
-}\\
-
-\skill{Git}{
-Employment and coursework.
-Comfortable with version control best practices.
-}\\
-
-\skill{HTML, CSS, ReactJS}{
-Frontend web development for employment, as well as coursework.
-}\\
-
 \skill{Java}{
 Coursework to learn and develop algorithms.
-Experienced in GUI development with JavaFX.
 }\\
 
 \skill{C, CUDA, OpenMP}{
